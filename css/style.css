@@ -1,0 +1,131 @@
+body { 
+	background: url("../images/bg_blue.jpg") repeat 0 0;
+	background-attachment: ;
+  	
+	}
+
+
+footer {
+	
+}
+
+header {
+	
+}
+
+h1 {
+	
+}
+
+
+h2 {
+	
+	
+}
+
+h3 {
+
+}
+
+header {
+	}
+
+
+a { 
+	}
+
+a:hover {  }
+
+main {
+	
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+
+	.grid {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 40px;
+		width: 70%;
+	}
+	
+	.grid_about {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.shopping {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+    label {
+        display: block;
+        grid-template-columns: 1fr;
+
+   }
+
+   .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+		border-bottom: 1px solid;
+        margin: 0;
+     
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    
+    .inner_main_menu {
+    	display: none;
+    }
+}
+
+
+
+@media only screen and (min-width: 1025px) {
+	.menu {display: none;}
+	.nav{display: none;}
+	header {
+		grid-template-columns: 1fr 1fr;
+
+	}
+	.shopping {
+		grid-template-columns: 1fr 1fr 1fr;
+
+	}
+}
+
+
+@media only screen and (min-width: 1200px) {
+	.menu {display: none;}
+	.nav{display: none;}
+
+
+}
+	
+
+@media only screen and (min-width: 1440px) {
+	.menu {display: none;}
+	.nav{display: none;}
+	header {
+		grid-template-columns: 1fr 1fr;
+
+	}
+
+
+}
+
+
+
+
+
+
+
+
