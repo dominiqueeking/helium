@@ -2,25 +2,98 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Helium Comedy Club</title>
+	<title>Helium</title>
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/hdl0owk.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+
+
 </head>
 <body>
 	
 	<header>
-		<div>
 	</header>
 
 	<nav>
+			<div align="left"><a href="#about" id="about_hover"><h2>About</h2></a></div>
+			
+			<div class ="grow" id="logo"><a href="#home"><img src="images/helium_logo.svg" width="100px" align="center"></a></div>
+			
+			<div align="right"><a href="#events"><h3>Events</h3></a></div>
 	</nav>
 
+
 	<main>
+		<div>
+			<div id="home">
+				<br><br><br><br><br><br>
+				<h5 class="float-ease-in-out6">Clean up your act</h5><br><br>
+				<div class="animated animatedFadeInUp fadeInUp">
+					<img class="float-ease-in-out1" src="images/whoopee.png" width="23%">
+					<img class="float-ease-in-out4" src="images/beer.png" width="11%">
+					<img class="float-ease-in-out2" src="images/teeth.png" width="13%">
+					<img class="float-ease-in-out5" src="images/bong.png" width="13%">
+					<img class="float-ease-in-out3" src="images/popcorn.png" width="24%">
+
+
+					</div>
+
+
+
+				</div>
+	
+			</div>
+			<div id="about">
+			<br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<h4 class="animated animatedFadeInUp fadeInUp">Helium's Comedy Collective welcomes new and seasoned comics looking to clean up their act with group writing sessions, monthly hangouts, and workshops. </h4>
+					
+			</div>
+
+
+			<div id="events">
+				<br><br><br><br><br><br><br>
+				<div class="animated animatedFadeInUp fadeInUp">
+				<img class="float-ease-in-out6" id="mic_teeth" src="images/mic_teeth.png" width="150%" align="left">
+				</div>
+				<br>
+			<div class="marquee">
+				      <div class="marquee__content">
+				        <ul class="list-inline">
+				          <li>Ha</li>
+				          <li>Ha</li>
+				          <li>Ha</li>
+				          <li>Ha</li>
+				          <li>Ha</li>
+				        </ul>
+				        <ul class="list-inline">
+				          <li>Ha</li>
+				          <li>Ha</li>
+				          <li>Ha</li>
+				          <li>Ha</li>
+				          <li>Ha</li>
+				        </ul>
+				        <ul class="list-inline">
+				          <li>Ha</li>
+				          <li>Ha</li>
+				          <li>Ha</li>
+				          <li>Ha</li>
+				          <li>Ha</li>
+				        </ul>
+				      </div>
+			    </div>
+
+			</div>
+
+		</div>
+
 	</main>
+
+
 
 	<footer>
 	</footer>
@@ -35,6 +108,36 @@
   	crossorigin="anonymous"></script>
   	<!-- link for your script file -->
   	<script src="scripts/script.js"></script>
+	</script>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
 	</script>
 
 </body>
